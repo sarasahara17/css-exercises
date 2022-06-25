@@ -24,3 +24,13 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.bigbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.fourboxes {
+  display: flex;
+  flex-direction: column;
+}
