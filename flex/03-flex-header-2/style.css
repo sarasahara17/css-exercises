@@ -6,20 +6,21 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  align-self: center;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
 }
 
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height:  48px;
+.left {
+  display: flex;
+  justify-content: flex-start;
+  margin: 8px;
 }
 
 .logo {
@@ -27,6 +28,34 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  align-self: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+  align-self: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.link-one {
+  margin-left: 16px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px;
 }
 
 button {
@@ -35,14 +64,17 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  align-self: center;
+  margin-right: 16px;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height:  48px;
+  align-self: center;
 }
 
-ul {
-  list-style-type: none;
-}
+
