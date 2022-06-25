@@ -2,25 +2,32 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+
+/* Made changes after viewing solution for more efficiency in future, but nothing changed in the outcome vs my original code */
+
+
 body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
-  align-self: center;
+  /* Centering is taken care of in .left .right */
 }
 
-.header {
+.header {       /* Done correctly */
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
   justify-content: space-between;
+  /* Padding can be included in header only and not on each class as it is all the same */
+  padding: 8px;
 }
 
-.left {
+.left .right {    /* Right and left can be included together as code is the same */
   display: flex;
-  justify-content: flex-start;
-  margin: 8px;
+  align-items: center; /* Items can be center aligned here instead of individually */
+  /* No need for "space between spacing here, its in .header */
+  gap: 16px; /* use gap here and elsewhere instead of adjusting margins */
 }
 
 .logo {
@@ -28,7 +35,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-  align-self: center;
+  /* Centering is taken care of in .left .right, use align-items instead of align-self for parent*/
 }
 
 ul {
@@ -36,26 +43,15 @@ ul {
   display: flex;
   padding: 0;
   margin: 0;
-  align-self: center;
+  gap: 16px; /* use gap here and elsewhere instead of adjusting margins */
+  /* Centering is taken care of in .left .right, use align-items instead of align-self for parent*/
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
-  align-self: center;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.link-one {
-  margin-left: 16px;
-}
-
-.right {
-  display: flex;
-  justify-content: flex-end;
-  margin: 8px;
+  /* Centering is taken care of in .left .right, use align-items instead of align-self for parent*/
 }
 
 button {
@@ -64,8 +60,7 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-  align-self: center;
-  margin-right: 16px;
+  /* Centering is taken care of in .left .right, use align-items instead of align-self for parent*/
 }
 
 .profile-image {
@@ -74,7 +69,7 @@ button {
   border-radius: 50%;
   width: 48px;
   height:  48px;
-  align-self: center;
+  /* Centering is taken care of in .left .right, use align-items instead of align-self for parent*/
 }
 
 
