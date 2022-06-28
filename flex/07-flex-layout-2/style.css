@@ -12,13 +12,14 @@ body {
   color: white;
   font-size: 32px;
   font-weight: 900;
-  margin-left: 16px;
+  display: flex;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
 }
 
 .sidebar {
@@ -44,6 +45,7 @@ body {
 .awesome {
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 16px;
 }
 
 .rightbody {
@@ -53,4 +55,14 @@ body {
   align-content: stretch;
   padding: 32px;
   gap: 24px;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.odin {
+  margin: auto;
 }
