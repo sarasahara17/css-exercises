@@ -10,6 +10,9 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  margin-left: 16px;
 }
 
 .footer {
@@ -22,18 +25,32 @@ body {
   width: 300px;
   background: royalblue;
   display: flex;
+  flex: 0 0 auto;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  height: 300px;
+  width: 400px;
 }
 
 .middle {
-  display: flex
+  display: flex;
+  flex: 10;
+}
+
+.awesome {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .rightbody {
-  display: flex
+  display: flex;
+  flex: 4;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 32px;
+  gap: 24px;
 }
